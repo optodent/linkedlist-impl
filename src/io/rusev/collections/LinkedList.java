@@ -80,6 +80,7 @@ public class LinkedList<E> implements List<E> {
             }
             prev = current;
             current = current.getNextNode();
+            if (current == null) return null;
             counter++;
         }
         return null;
